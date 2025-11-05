@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Emergent Docs",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -11,14 +11,78 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guidessss",
+        "tab": "Guides",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Introduction",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "introduction/welcome",
+              "introduction/plans-and-credits",
+              "introduction/faq",
+              "introduction/getting-started-project"
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "features/mcp",
+              "features/voice-mode",
+              "features/github-integration",
+              "features/project-visibility",
+              "features/universal-key",
+              "features/visual-testing",
+              "features/deployments",
+              "features/context-limits",
+              "features/mobile-app",
+              "features/collaboration"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "integrations/github",
+              "integrations/stripe",
+              "integrations/supabase",
+              "integrations/openai",
+              "integrations/claude",
+              "integrations/gemini",
+              "integrations/airtable",
+              "integrations/elevanets"
+            ]
+          },
+          {
+            "group": "Custom Agent Building (Pro Mode)",
+            "pages": [
+              "agents/architecture",
+              "agents/main-agents",
+              "agents/sub-agents",
+              "agents/tools"
+            ]
+          },
+          {
+            "group": "Prompt Engineering",
+            "pages": [
+              "prompts/guide",
+              "prompts/library",
+              "prompts/integrations",
+              "prompts/debugging"
+            ]
+          },
+          {
+            "group": "Use Cases",
+            "pages": [
+              "use-cases/showcase-apps",
+              "use-cases/tutorials",
+              "use-cases/landing-pages",
+              "use-cases/saas",
+              "use-cases/prototypes"
+            ]
+          },
+          {
+            "group": "Mastering Emergent (Tips & Tricks)",
+            "pages": [
+              "mastering/ui-design",
+              "mastering/troubleshooting"
             ]
           }
         ]
