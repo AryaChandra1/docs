@@ -11,7 +11,7 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Introduction",
         "groups": [
           {
             "group": "Introduction",
@@ -21,7 +21,12 @@
               "introduction/faq",
               "introduction/getting-started-project"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Features",
+        "groups": [
           {
             "group": "Features",
             "pages": [
@@ -36,7 +41,12 @@
               "features/mobile-app",
               "features/collaboration"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Integrations",
+        "groups": [
           {
             "group": "Integrations",
             "pages": [
@@ -47,9 +57,14 @@
               "integrations/claude",
               "integrations/gemini",
               "integrations/airtable",
-              "integrations/elevanets"
+              "integrations/elevenlabs"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Custom Agents",
+        "groups": [
           {
             "group": "Custom Agent Building (Pro Mode)",
             "pages": [
@@ -58,7 +73,12 @@
               "agents/sub-agents",
               "agents/tools"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Prompt Engineering",
+        "groups": [
           {
             "group": "Prompt Engineering",
             "pages": [
@@ -67,7 +87,12 @@
               "prompts/integrations",
               "prompts/debugging"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Use Cases",
+        "groups": [
           {
             "group": "Use Cases",
             "pages": [
@@ -77,7 +102,12 @@
               "use-cases/saas",
               "use-cases/prototypes"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Mastering Emergent",
+        "groups": [
           {
             "group": "Mastering Emergent (Tips & Tricks)",
             "pages": [
