@@ -26,25 +26,26 @@
         ]
       },
       {
-        "tab": "Features",
-        "groups": [
-          {
-            "group": "Features",
-            "pages": [
-              "features/mcp",
-              "features/voice-mode",
-              "features/github-integration",
-              "features/project-visibility",
-              "features/universal-key",
-              "features/visual-testing",
-              "features/deployments",
-              "features/context-limits",
-              "features/mobile-app",
-              "features/collaboration"
-            ]
-          }
-        ]
-      },
+  "tab": "Features",
+  "defaultPage": "features/mcp",
+  "groups": [
+    {
+      "group": "Features",
+      "pages": [
+        "features/mcp",
+        "features/voice-mode",
+        "features/github-integration",
+        "features/project-visibility",
+        "features/universal-key",
+        "features/visual-testing",
+        "features/deployments",
+        "features/context-limits",
+        "features/mobile-app",
+        "features/collaboration"
+      ]
+    }
+  ]
+},
       {
         "tab": "Integrations",
         "groups": [
