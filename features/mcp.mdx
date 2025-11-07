@@ -1,0 +1,99 @@
+---
+title: "MCP (Model Context Protocol)"
+description: "Connect any data source to Emergent using MCP - a universal protocol that lets AI agents integrate with any API, database, or system through simple configuration."
+---
+
+Emergent has always made API integration straightforward.\
+We’ve built reliable **integration playbooks** for common APIs — when you say _“Integrate Stripe payments”_ or _“Add Google authentication,”_ our agents know exactly what to do.
+
+Now, with **MCP (Model Context Protocol)** support, you can connect **any data source**, even those Emergent hasn’t seen before.
+
+---
+
+## What Is an MCP Server?
+
+An **MCP server** acts as a smart adapter that lets Emergent’s AI agents communicate directly with any external service, tool, or database.
+
+Instead of writing code or managing complex API credentials, MCP servers **translate your data source into a format Emergent can understand** - instantly.
+
+| Analogy           | Description                                                                                  |
+| ----------------- | -------------------------------------------------------------------------------------------- |
+| **API Playbooks** | Predefined recipes for popular integrations — fast, reliable, but limited to known services. |
+| **MCP Servers**   | Flexible translators that work with _any_ system, even custom or proprietary ones.           |
+
+<Info>
+  With MCP, you’re no longer limited to pre-built integrations.\
+  If a service has an MCP server, Emergent can connect to it immediately — no middleware, no coding.
+</Info>
+
+---
+
+## Why MCP Matters
+
+Emergent’s existing playbooks already support popular integrations like:
+
+- **Payments:** Stripe, PayPal
+- **Authentication:** Google, GitHub
+- **Databases:** Supabase, Airtable
+
+With **MCP support**, you can now connect to:
+
+- Proprietary or internal systems unique to your organization
+- Specialized or industry-specific tools
+- Custom databases or data warehouses
+- Legacy systems with unique protocols
+- New tools as soon as they release MCP servers
+
+<Tip>
+  MCP brings unlimited integration flexibility — you can connect any data source, structured or not.
+</Tip>
+
+---
+
+## Connecting an MCP Server
+
+MCP configuration is **project-specific**, giving you full control over which data sources each app can access.
+
+<Steps>
+  <Step title="Access Advanced Controls">
+    Before starting your project, click **Advanced Controls** in the project setup screen.
+  </Step>
+  <Step title="Open MCP Tools">
+    Inside Advanced Controls, click **Select MCP Tools** to open your MCP configuration panel.
+  </Step>
+  <Step title="Choose Your Configuration Method">
+    - **Option A: Configure a New MCP Server**
+      1. Click **Configure New MCP**
+      2. Name your server (e.g., `company-database`, `weather-api`)
+      3. Add an optional description
+      4. Paste your JSON configuration
+      5. Click **Verify and Save**
+    - **Option B: Enable Existing MCPs** Toggle on previously configured MCP servers to reuse them without re-entering credentials.
+  </Step>
+  <Step title="Start Building">
+    Once configured, start your project.\
+    Emergent’s agents will have access to these connected data sources throughout the build process.
+  </Step>
+</Steps>
+
+### Watch How you can Configure MCP
+
+<iframe src="https://www.youtube.com/embed/5io2510S-YU?autoplay=1&mute=1&loop=1&playlist=5io2510S-YU" title="Emergent MCP Demo" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
+
+---
+
+## Example Configuration - Firecrawl MCP
+
+```json
+{
+  "mcpServers": {
+    "firecrawl-mcp": {
+      "command": "npx",
+      "args": ["-y", "firecrawl-mcp"],
+      "env": {
+        "FIRECRAWL_API_KEY": "YOUR-API-KEY"
+      }
+    }
+  }
+}
+```
