@@ -1,0 +1,214 @@
+---
+title: "GitHub Integration"
+---
+
+Emergent’s **GitHub integration** lets you manage your projects with version control, collaborate with teams, and back up your work automatically — all from within the Emergent interface.
+
+You can connect your GitHub account, push and pull code, manage branches, and collaborate across multiple environments seamlessly.
+
+---
+
+## Use Case 1: Starting a New Project and Saving to GitHub
+
+<Info>
+  Use this workflow when you’re starting a brand new app and want to save it to GitHub for version control.
+</Info>
+
+<Steps>
+  <Step title="Start Your Project">
+    - Begin a new task in Emergent with a project description, e.g. _“Build a task management app.”_
+    - Let the agent build your application.
+    - Test it using the **Preview** feature.
+  </Step>
+  <Step title="Connect GitHub (First Time Only)">
+    1. Click your **profile icon** in Emergent.
+    2. Select **Connect GitHub**.
+    3. Authorize Emergent via the GitHub login screen.
+    4. Grant access permissions to repositories.
+  </Step>
+  <Step title="Save to GitHub">
+    1. Click **Save to GitHub** in the chat interface.
+    2. Choose to create a new repository or select an existing one.
+    3. Select the branch (typically `main` for new projects).
+    4. Click **PUSH TO GITHUB**.\
+       Your project is now saved with automatic commit messages.
+  </Step>
+</Steps>
+
+<Tip>
+  Save after completing major features, and before big changes, to keep your progress safe and versioned.
+</Tip>
+
+---
+
+## Use Case 2: Continuing Work on an Existing GitHub Repository
+
+<Info>
+  Use this workflow to continue developing a project that already exists on GitHub.
+</Info>
+
+<Steps>
+  <Step title="Start a New Task">
+    - Begin a new task in Emergent.
+    - Click the **GitHub** button on the chat screen.
+  </Step>
+  <Step title="Pull from GitHub">
+    - Choose **Pull from GitHub**.
+    - Select your repository from the connected GitHub account.
+    - Pick the branch you want to import.
+    - Emergent will bring your existing code into your workspace.
+  </Step>
+  <Step title="Continue Development">
+    - Explore files using the file viewer.
+    - Add features, fix bugs, and preview updates.
+    - Use the chat to guide changes via natural language.
+  </Step>
+  <Step title="Save Progress">
+    - Click **Save to GitHub** regularly to push updates.
+    - Select the same repository and branch.
+    - Emergent automatically commits the new changes.
+  </Step>
+</Steps>
+
+<Tip>
+  Always pull the latest version before starting a new session, especially when working with collaborators.
+</Tip>
+
+---
+
+## Use Case 3: Team Collaboration Workflow
+
+<Info>
+  Emergent integrates seamlessly with GitHub’s collaboration tools, making it easy for multiple teammates to work on the same project.
+</Info>
+
+<Steps>
+  <Step title="Project Owner Setup">
+    - Create the initial project in Emergent.
+    - Save it to a **shared GitHub repository**.
+    - Add team members as **collaborators** on GitHub.
+  </Step>
+  <Step title="Team Member Workflow">
+    - Each member connects their GitHub account to Emergent.
+    - Pull the shared repository into their workspace.
+    - Work on assigned features independently.
+  </Step>
+  <Step title="Using Feature Branches">
+    - When saving, create a new branch (e.g. `feature-user-auth`, `feature-payments`).
+    - Push changes to this feature branch.
+    - Keep `main` branch stable for production-ready code.
+  </Step>
+  <Step title="Code Integration">
+    - Use **pull requests** on GitHub to review and merge branches.
+    - Merge approved changes into `main`.
+    - Pull the latest version into Emergent to stay up to date.
+  </Step>
+</Steps>
+
+<Check>
+  Use descriptive branch names and coordinate tasks with your team to avoid conflicts.\
+  Always test before merging into `main`.
+</Check>
+
+---
+
+## Use Case 4: Managing Multiple Project Versions
+
+<Info>
+  If you’re experimenting with different features or want to maintain multiple versions of your app, use branches to manage them effectively.
+</Info>
+
+<Steps>
+  <Step title="Create an Experimental Branch">
+    - Open your main project in Emergent.
+    - Save to GitHub with a new branch name (e.g. `experimental-ui`).
+    - Build and test your experimental features separately.
+  </Step>
+  <Step title="Switch Between Versions">
+    - **Main version** → Pull from `main` branch.
+    - **Experimental version** → Pull from `experimental-ui` branch.
+    - Each branch represents a distinct version of your project.
+  </Step>
+  <Step title="Merge Successful Experiments">
+    - Use GitHub’s pull request system to merge successful experiments into the main branch.
+    - Delete unneeded branches once merged.
+  </Step>
+</Steps>
+
+<Tip>
+  Keep experimental branches isolated until features are stable and reviewed.
+</Tip>
+
+---
+
+## Use Case 5: Backup and Recovery Workflow
+
+<Info>
+  Emergent automatically syncs your work to GitHub, ensuring you always have a backup — but you can also manage manual backups for extra safety.
+</Info>
+
+<Steps>
+  <Step title="Regular Backup Schedule">
+    - Save after completing each major feature.
+    - Save before attempting significant refactors or changes.
+    - Save at the end of every session.
+  </Step>
+  <Step title="Recovery Process">
+    - If something breaks, start a new task in Emergent.
+    - Pull your last saved version from GitHub.
+    - Continue development from the last stable commit.
+  </Step>
+  <Step title="Version History">
+    - Use GitHub’s commit history to review or revert changes.
+    - Restore any previous state directly from GitHub.
+    - Track progress and changes over time.
+  </Step>
+</Steps>
+
+<Check>
+  Saving regularly to GitHub ensures you can always recover previous versions without losing progress.
+</Check>
+
+---
+
+## Troubleshooting Common GitHub Issues
+
+### Connection Problems
+
+**Issue:** GitHub connection isn’t working.\
+**Solution:**
+
+1. Go to **GitHub → Settings → Applications → Installed GitHub Apps**.
+2. Find **Emergent** and uninstall it.
+3. Reconnect your GitHub account in Emergent.
+
+---
+
+### Push Conflicts
+
+**Issue:** Getting conflict errors when pushing.\
+**Solution:**\
+Create a new branch instead of pushing to `main`.\
+Resolve conflicts later through GitHub’s web interface.\
+This preserves your latest work while avoiding overwriting existing code.
+
+---
+
+### Missing Repositories
+
+**Issue:** Your repositories aren’t visible in Emergent.\
+**Solution:**
+
+- Ensure your GitHub account is connected correctly.
+- Verify that Emergent has repository access permissions.
+- Try disconnecting and reconnecting GitHub.
+
+---
+
+<Info>
+  Emergent’s GitHub integration provides full version control, team collaboration, and safe recovery — all through simple prompts and clicks, no setup required.
+</Info>
+
+<Check>
+  You now have everything you need to manage your code with GitHub inside Emergent — from solo projects to team workflows.
+</Check>
