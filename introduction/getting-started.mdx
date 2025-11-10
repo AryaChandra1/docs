@@ -5,9 +5,9 @@ description: "Build your first full stack app"
 
 ### How to Start Vibecoding as a Complete Beginner
 
-Welcome to the world of **Vibecoding** — a new way to build applications using natural language instead of traditional code.
+Welcome to the world of **Vibecoding** - a new way to build applications using natural language instead of traditional code.
 
-Instead of learning frameworks, syntax, or programming languages, you simply talk to an AI agent about what you want to build — and Emergent turns that vision into a working app.
+Instead of learning frameworks, syntax, or programming languages, you simply talk to an AI agent about what you want to build - and Emergent turns that vision into a working app.
 
 By the end of this guide, you’ll be able to:
 
@@ -23,7 +23,7 @@ By the end of this guide, you’ll be able to:
 
 Vibecoding flips traditional programming on its head.
 
-Instead of learning how to code, you focus on **what** you want to build — and Emergent’s AI agents handle the **how**.
+Instead of learning how to code, you focus on **what** you want to build - and Emergent’s AI agents handle the **how**.
 
 | Traditional Coding                  | Vibecoding                          |
 | ----------------------------------- | ----------------------------------- |
@@ -34,7 +34,7 @@ Instead of learning how to code, you focus on **what** you want to build — and
 Example:
 
 You: “Add a user authentication system with email and password.”\
-Emergent: Builds it in 5 minutes — ready to test and iterate.
+Emergent: Builds it in 5 minutes - ready to test and iterate.
 
 <Tip>
   The better you describe what you want, the better the result.\
@@ -45,7 +45,7 @@ Emergent: Builds it in 5 minutes — ready to test and iterate.
 
 ## The Vibecoding Mindset
 
-Vibecoding isn’t about syntax — it’s about **vision and clarity**.
+Vibecoding isn’t about syntax - it’s about **vision and clarity**.
 
 You focus on:
 
@@ -68,7 +68,7 @@ Emergent focuses on:
 
 ## Understanding Emergent
 
-Emergent is your **vibecoding platform** — an AI-powered development environment where you build full-stack apps through conversation.
+Emergent is your **vibecoding platform** - an AI-powered development environment where you build full-stack apps through conversation.
 
 You don’t need a code editor, terminal, or hosting setup.\
 Just describe your idea, and Emergent builds, tests, and deploys it for you.
@@ -79,7 +79,7 @@ Just describe your idea, and Emergent builds, tests, and deploys it for you.
 
 This Spider-Man landing page was built entirely using AI — from prompt to production.
 
-![Spider-Man Demo](/images/newsletter-spiderman.gif)
+![Spider-Man Demo](/images/NewsletterSpiderManGIF.gif)
 
 ---
 
@@ -104,6 +104,8 @@ Emergent handles:
 
 ## Choosing the Right Agent
 
+![Agentselector Pn](/images/agentselector.png)
+
 | Agent         | Best For                 | Speed    | Quality   | Use When                             |
 | ------------- | ------------------------ | -------- | --------- | ------------------------------------ |
 | **E-1**       | Complex, production apps | Slower   | Highest   | Building real products for customers |
@@ -117,7 +119,9 @@ Emergent handles:
 ## The Universal LLM Key
 
 You don’t need to manage multiple AI API keys.\
-Emergent provides a **Universal LLM Key** that gives you access to GPT-5, Claude, Gemini, and more — through one billing system powered by **Emergent Credits**.
+Emergent provides a **Universal LLM Key** that gives you access to GPT-5, Claude, Gemini, and more - through one billing system powered by **Emergent Credits**.
+
+![Universalkeybanner Pn](/images/universalkeybanner.png)
 
 <Info>
   No API setup. No billing headaches. Just start building instantly.
@@ -157,80 +161,132 @@ It’s simple, useful, and a perfect way to learn the flow.
     - [DESIGN STYLE]
     ```
 
-    Example Prompt:\
+    Our Actual Prompt:
+
+    ```
     Create a personal book tracking app where users can:
-
-    - Add books with title, author, and cover image
-    - Mark books as “Want to Read”, “Currently Reading”, or “Finished”
-    - Rate and review books
-    - View reading statistics
-    - Search by title or author
-
-    Use warm, library-themed colors and a clean grid layout.
+    - Add books with title, author, and cover image URL
+    - Mark books as "Want to Read", "Currently Reading", or "Finished"
+    - Rate finished books (1-5 stars) and add personal notes
+    - View their reading statistics (total books, books finished this year, etc.)
+    - Search through their book collection by title or author
+    
+    Make it look modern and clean with a book-themed design -  think library aesthetics with warm colors and good typography. Use a grid layout to display books like a bookshelf.
+    ```
   </Step>
   <Step title="The Planning Session">
-    The agent will ask clarifying questions like:
+    The agent will start by asking clarifying questions. \
+    \
+    **"Should I use the Universal LLM Key or your own API key?"** → Choose **Universal LLM Key** (simpler, no setup needed)
 
-    - “Use Universal LLM Key?” → Yes
-    - “Add authentication?” → Not yet
-    - “Design preferences?” → Tailwind CSS with warm tones
+    **"Do you want user authentication (login system)?"** → For a first project, say **"Not needed for now"** (you can add it later)
 
-    <Tip>
-      Unsure about a term? Ask the agent to explain before building.\
-      Every build is a learning opportunity.
-    </Tip>
+    **"Any specific design framework or color preferences?"** → You can say: **"Use Tailwind CSS with warm brown and cream colors, like a cozy library"**
+
+    **"Should I start building or do you want to discuss more?"** → Say: **"Start building based on what we discussed"**
+
+    **Pro tip:** If you're not sure about something, ask the agent to explain before building:Unsure about a term? Ask the agent to explain before building.\
+    Every build is a learning opportunity.
+
+    The agent is smart and helpful, use it to learn as you build.
+
+    ```
+    "Can you explain what user authentication means and whether I need it for this app? Don't start building yet, let's discuss first."
+    ```
   </Step>
   <Step title="Watch It Build">
-    Once confirmed, Emergent begins generating your app:
+    Once you give the go-ahead, the agent starts building. You'll see real-time updates:
 
-    - Project structure created
-    - Database setup (MongoDB)
-    - UI components rendered
-    - Features implemented
-    - Testing complete
+    ```
+    ✓ Created project structure
+    ✓ Set up MongoDB database
+    ✓ Building frontend components
+    ✓ Implementing book management features
+    ✓ Adding search functionality
+    ✓ Styling with Tailwind CSS
+    ✓ Creating reading statistics dashboard
+    → Running tests...
+    ```
 
     <Info>
       Builds usually take 5–15 minutes.\
-      Read the agent’s explanations — they teach you how the app works.
+      Read the agent’s explanations - they teach you how the app works.
     </Info>
   </Step>
   <Step title="Test Your First Version">
-    Once it’s live, open the preview link and test every feature.\
-    Check your browser console (F12) for any errors or issues.
+    When building completes, you'll get a **preview link**. 
+
+    Click it to see your app live.
+
+    Your app is now running and accessible. Time to test it! 
+
+    ![Livepreview Pn](/images/livepreview.png)
   </Step>
-  <Step title="Iterate and Improve">
-    After testing, note what you’d like to refine.
+  <Step title="Your First Iteration">
+    After testing, you'll notice things you want to improve. This is completely normal and expected!
 
-    Good Feedback Example:
+    **How to request improvements:**
 
-    - Make book covers 20% larger
-    - Add a delete button
-    - Show a “Currently Reading” section at the top
+    **Good approach:**
 
-    Bad Feedback Example:
+    ```
+    I tested the app and it works great! A few improvements:
+    
+    1. Make the book covers 20% larger so they're easier to see
+    2. Add a delete button (maybe a small X in the corner of each book)
+    3. Add a prominent "Currently Reading" section at the top showing those books separately
+    
+    Can you implement these changes?
+    ```
 
-    - “Make it better”
+    **Bad approach:**
+
+    ```
+    make it better and add more stuff
+    ```
+
+    Remember: **Be specific and detailed.** The agent rewards clarity. 
+
+    Look at the improvement after the feedback : 
+
+    ![Refinedpromptoutput Pn](/images/refinedpromptoutput.png)
+
+    ![Refinedpromptoutput2 Pn](/images/refinedpromptoutput2.png)
 
     <Check>
       Be clear and specific. The agent rewards detail and direction.
     </Check>
   </Step>
   <Step title="Handling Your First Error">
-    Don’t panic — errors are part of the process.\
-    Example:
+    At some point, you'll encounter an error. Don't panic, this is part of vibecoding!
+
+    **Common scenario:** You try to add a book, but nothing happens. You check the browser console (F12) and see:
 
     ```
     Error: Failed to POST /api/books
     Status: 500 Internal Server Error
     ```
 
-    How to report it: “When I click ‘Add Book’, nothing happens.\
-    Console shows: Error 500 – Failed to POST /api/books.”
+    **How to report it to the agent:**
 
-    <Note>
-      Always describe what you expected vs. what happened,\
-      and report one issue at a time.
-    </Note>
+    ```
+    I found a bug. When I click "Add Book" and fill in the details, nothing happens. The book doesn't get added.
+    
+    I checked the browser console and found this error:
+    [paste the error message]
+    
+    Can you fix this?
+    ```
+
+    **Important rules for error reporting:**
+
+    1. **Test it yourself first**, Don't immediately run to the agent
+    2. **Get the actual error message**, Use F12 console
+    3. **Describe what you expected vs. what happened**
+    4. **Share screenshots if helpful**
+    5. **Report one error at a time** -  Don't mix bugs with feature requests
+
+    The agent will analyze the error, fix it, and often explain what went wrong so you learn. 
   </Step>
 </Steps>
 
@@ -238,7 +294,7 @@ It’s simple, useful, and a perfect way to learn the flow.
 
 ## Wrapping Up
 
-You don’t need to learn to code — you need to learn to communicate with AI.\
+You don’t need to learn to code - you need to learn to communicate with AI.\
 That’s the essence of vibecoding.
 
 You describe what you want, the agent builds it, and you refine through feedback.
@@ -256,7 +312,7 @@ You describe what you want, the agent builds it, and you refine through feedback
 3. Let Emergent build it
 4. Test, refine, and repeat
 
-As you grow comfortable, add **auth, payments, and integrations** when they serve your product — not before.
+As you grow comfortable, add **auth, payments, and integrations** when they serve your product - not before.
 
 <Tip>
   Vibecoding is more like directing than programming.\
