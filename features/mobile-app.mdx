@@ -1,5 +1,172 @@
+---
+title: "Mobile App"
+---
+
+Emergent’s **Mobile Agent** enables you to build full-stack mobile applications using natural language prompts - no code, no setup, and fully production-ready on both iOS and Android.
+
+---
+
+## What Is the Mobile Agent?
+
+<Info>
+  The Mobile Agent is a specialized AI environment built for **mobile app development** using **Expo (React Native)** with integrated backend and database support.
+</Info>
+
+**Key Features:**
+
+- Specialized for mobile development using **Expo (React Native)**
+- Integrated **FastAPI backend** and **MongoDB database**
+- Mobile-optimized UI/UX patterns and components
+- Cross-platform (iOS + Android)
+- Supports real-time preview with **Expo Go**
+- Available for **Standard** and **Pro** plan users only
+
+---
+
+## How to Access the Mobile Agent
+
 <Steps>
-  <Step title="New Step">
-    
+  <Step title="1. Select Mobile Agent">
+    On the Emergent home screen, open the **Agent Selector** (defaults to “E1” or “E1.1”) and choose **Mobile**.
+  </Step>
+  <Step title="2. Start a New Task">
+    Enter your mobile app prompt, such as:
+
+    > “Build a mobile task management app with user authentication and push notifications.”
+  </Step>
+  <Step title="3. Begin Building">
+    The Mobile Agent automatically creates an Expo project with backend and database setup.
+  </Step>
+  <Step title="4. Preview & Test">
+    Use the **Expo Go app** or simulators to test your app live as it builds.
   </Step>
 </Steps>
+
+<Tip>
+  You must have an active **Standard** or **Pro** subscription to access the Mobile Agent.
+</Tip>
+
+---
+
+## Technology Stack
+
+| Layer                   | Framework           |
+| ----------------------- | ------------------- |
+| **Frontend**            | Expo (React Native) |
+| **Backend**             | FastAPI (Python)    |
+| **Database**            | MongoDB             |
+| **Supported Platforms** | iOS, Android        |
+
+<Note>
+  Native frameworks like Flutter, Swift, and Kotlin are **not supported**.\
+  Emergent supports **cross-platform** development via React Native only.
+</Note>
+
+---
+
+## Development Workflow
+
+<Steps>
+  <Step title="1. Project Initialization">
+    The agent creates a full Expo project with backend integration and database setup.
+  </Step>
+  <Step title="2. Development">
+    Build and iterate using prompts.\
+    Example:
+
+    > “Add a workout tracker with a timer and progress chart.”
+  </Step>
+  <Step title="3. Testing">
+    Test your app using **Expo Go** on real devices or simulators.\
+    Verify UI, API integration, and offline behavior.
+  </Step>
+  <Step title="4. Iteration">
+    Refine design, fix bugs, and add new features using natural prompts.
+  </Step>
+</Steps>
+
+<Info>
+  The Mobile Agent follows best mobile development practices — reusable components, responsive layouts, and API-driven architecture.
+</Info>
+
+---
+
+## Deployment Options
+
+Emergent uses **Expo** for mobile app deployment. You can deploy for testing or publish to app stores.
+
+<Steps>
+  <Step title="Option 1: Expo Development Build (Testing)">
+    - Use **Deploy → Mobile App Deployment** in Emergent.
+    - The Mobile Agent creates a sharable build link or QR code.
+    - Scan the QR code with the **Expo Go** app to test instantly.
+  </Step>
+  <Step title="Option 2: Production Deployment (App Stores)">
+    - Build for **Apple App Store** or **Google Play Store** using Expo EAS.
+    - Follow store submission guidelines.
+    - Upload `.ipa` or `.aab` files for review and release.
+  </Step>
+  <Step title="Option 3: Direct APK Distribution">
+    - Generate an **APK file** for Android.
+    - Distribute directly without Play Store (useful for enterprise/internal apps).
+  </Step>
+</Steps>
+
+<Note>
+  Each deployed mobile app consumes **50 credits/month** for managed hosting and updates.
+</Note>
+
+---
+
+## Common Use Cases
+
+| Use Case                   | Description                                                            |
+| -------------------------- | ---------------------------------------------------------------------- |
+| **Food Delivery App**      | Build restaurant browsing, cart, checkout, and delivery tracking apps. |
+| **Fitness Tracker**        | Log workouts, show charts, and send push reminders.                    |
+| **Team Collaboration App** | Real-time chat, task tracking, and file sharing for internal teams.    |
+
+<Tip>
+  Use Mobile Agent for startup MVPs, internal tools, or production-ready consumer apps — all through conversation.
+</Tip>
+
+---
+
+## Best Practices
+
+<Check>
+  **Start Simple** — build your MVP first, then layer in features.\
+  **Test Often** — use Expo Go to preview on real devices.\
+  **Save Regularly** — push progress to GitHub for version control.\
+  **Optimize UI** — design for touch gestures, small screens, and mobile performance.
+</Check>
+
+---
+
+## Troubleshooting
+
+| Issue                          | Solution                                                                                        |
+| ------------------------------ | ----------------------------------------------------------------------------------------------- |
+| **Expo Build Errors**          | Share the full error message with the Mobile Agent: “Please fix this Expo build error: [error]” |
+| **App Not Loading in Expo Go** | Ensure both your phone and computer are on the same Wi-Fi network. Restart the Expo server.     |
+| **API Connection Issues**      | Verify backend URL and CORS settings in your FastAPI server.                                    |
+| **Component Not Rendering**    | Check React Native imports and platform-specific code. Test on both iOS and Android.            |
+
+<Note>
+  The Mobile Agent can debug issues automatically — just describe what’s happening and share any error messages.
+</Note>
+
+---
+
+## Summary
+
+The **Mobile Agent** transforms mobile app development into a conversational, code-free process — powered by Expo and backed by Emergent’s full-stack environment.
+
+<Info>
+  Build, test, and deploy production-grade mobile apps on iOS and Android — all by describing what you want.
+</Info>
+
+<Check>
+  Ready to build your first mobile app?\
+  Select **Mobile Agent** in Emergent and start creating today.
+</Check>
