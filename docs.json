@@ -4,8 +4,8 @@
   "name": "Emergent Docs",
   "colors": {
     "primary": "#80FFF9",
-    "light": "#07C983",
-    "dark": "#80FFF9"
+    "light": "#80FFF9",
+    "dark": "#00A1B2"
   },
   "favicon": "/emergent-favicon.svg",
   "navigation": {
