@@ -2,12 +2,55 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "aspen",
   "name": "Emergent Docs",
+  "description": "Emergent Docs – build, iterate, and deploy AI-native products with custom agents, integrations, and a powerful prompt engineering workflow.",
   "colors": {
     "primary": "#80FFF9",
     "light": "#00A1B2",
     "dark": "#00A1B2"
   },
   "favicon": "/emergent-favicon.svg",
+  "thumbnails": {
+    "appearance": "dark",
+    "background": "/og/emergent-og.png",
+    "fonts": {
+      "family": "Space Grotesk"
+    }
+  },
+  "styling": {
+    "eyebrows": "breadcrumbs",
+    "appearance": {
+      "default": "dark",
+      "strict": false
+    },
+    "background": {
+      "decoration": "gradient",
+      "color": {
+        "light": "#020617",
+        "dark": "#020617"
+      }
+    },
+    "codeblocks": {
+      "theme": {
+        "light": "github-light",
+        "dark": "dracula"
+      }
+    },
+    "icons": {
+      "library": "lucide"
+    },
+    "fonts": {
+      "family": "Inter",
+      "weight": 400,
+      "heading": {
+        "family": "Space Grotesk",
+        "weight": 600
+      },
+      "body": {
+        "family": "Inter",
+        "weight": 400
+      }
+    }
+  },
   "navigation": {
     "tabs": [
       {
@@ -26,26 +69,26 @@
         ]
       },
       {
-  "tab": "Features",
-  "defaultPage": "features/mcp",
-  "groups": [
-    {
-      "group": "Features",
-      "pages": [
-        "features/mcp",
-        "features/voice-mode",
-        "features/github-integration",
-        "features/project-visibility",
-        "features/universal-key",
-        "features/visual-testing",
-        "features/deployments",
-        "features/context-limits",
-        "features/mobile-app",
-        "features/collaboration"
-      ]
-    }
-  ]
-},
+        "tab": "Features",
+        "defaultPage": "features/mcp",
+        "groups": [
+          {
+            "group": "Features",
+            "pages": [
+              "features/mcp",
+              "features/voice-mode",
+              "features/github-integration",
+              "features/project-visibility",
+              "features/universal-key",
+              "features/visual-testing",
+              "features/deployments",
+              "features/context-limits",
+              "features/mobile-app",
+              "features/collaboration"
+            ]
+          }
+        ]
+      },
       {
         "tab": "Integrations",
         "groups": [
